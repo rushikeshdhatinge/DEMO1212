@@ -14,9 +14,10 @@ router.get("/posts", (req, res) => {
 });
 
 router.post("/post",(req,res)=>{
-
-  res.sendStatus(200);
-})
+ let content = "Nothing"
+let title = "Rushikesh"
+ res.render("index",{content,title})
+});
 
 
 router.get("/newNote",(req,res)=>{

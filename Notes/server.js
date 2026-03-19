@@ -18,7 +18,7 @@ app.set("view engine", "ejs");
 
 
 app.get("/", (req, res) => {
-  res.send("Server working");
+res.render("index.ejs")
 });
 
 app.listen(port, () => {
