@@ -12,9 +12,13 @@
     <!-- <%-include("partials/header")  %>
     <h1>Home Page</h1> -->
 
-    <div class="bg-zinc-800 text-zinc-50 text-center w-1/4 rounded-xl m-4 p-4 cursor-pointer">
+    <div class="bg-zinc-800 text-zinc-50 flex flex-col gap-5 justify-between text-center w-1/4 rounded-xl m-4 p-4">
 
- <h1 class="text-3xl font-bold "> Title is <%= locals.title %></h1>
+ <h1 class="text-3xl font-bold  mt-10"> Title is <%= note.title %></h1>
+
+
+      <p class="text-lg text-zinc-50 ">Content is - <%= note.content %></p>
+      <h5 >Date</h5>
 
     </div>
      
